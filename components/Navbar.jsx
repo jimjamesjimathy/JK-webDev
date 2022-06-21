@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import compy from '../public/assets/nav-logo.png';
+import jkCompy from '../public/assets/p-logo.png';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -36,7 +38,7 @@ const Navbar = () => {
         <div className="bg-[#003049]">
           <Link href="/#home">
             <Image
-              src="/../public/assets/p-logo.png"
+              src={jkCompy}
               alt="/"
               width="55"
               height="55"
@@ -89,7 +91,7 @@ const Navbar = () => {
             <div className="flex-1 w-full items-center justify-between xxs:hidden xs:block">
               <Link href="/#home">
                 <Image
-                  src="/../public/assets/nav-logo.png"
+                  src={compy}
                   alt="/"
                   width="200"
                   height="200"
