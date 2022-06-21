@@ -103,7 +103,7 @@ const Navbar = () => {
               <AiOutlineClose size={20} />
             </div>
             <p className="text-center tracking-widest text-lg w-[100%] text-[#FCBF49] xxs:hidden">
-              Let's create something together!
+              Let&apos;s create something together!
             </p>
           </div>
 
