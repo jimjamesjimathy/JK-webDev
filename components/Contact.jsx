@@ -75,7 +75,6 @@ const Contact = () => {
             </div>
           </div>
           {/* Left ends */}
-
           {/* Right */}
           <div className="bg-[#00507A] col-span-3 w-full h-auto shadow-md shadow-[#000] rounded-xl lg:p-4">
             <div className="p-4">
