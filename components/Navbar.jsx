@@ -137,7 +137,7 @@ const Navbar = () => {
             </ul>
             <div className="pt-5 flex flex-wrap justify-center">
               <p className="uppercase tracking-widest text-xl text-[#FCBF49] border-b w-full py-6">
-                Let's chat!
+                Let&apos;s chat!
               </p>
               <div className="flex items-center justify-between my-4 py-4 w-full sm:w-[80%]">
                 <div className="rounded-full cursor-pointer hover:scale-150 ease-in duration-200 text-[#5DA9E9]">

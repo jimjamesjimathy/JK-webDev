@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import { RiRadioButtonFill } from 'react-icons/ri';
 import eCom from '../public/assets/eCommerce.png';
+import { RiRadioButtonFill } from 'react-icons/ri';
+import Link from 'next/link';
 
 const ecommerce = () => {
   return (
@@ -33,19 +34,20 @@ const ecommerce = () => {
             odio?{" "}
           </p>
           <div>
-            <a href='https://github.com/jimjamesjimathy/eCommerce' target='_blank'>
+            <a href='https://github.com/jimjamesjimathy/eCommerce' target='_blank' rel='noreferrer'>
             <button className="px-8 py-2 mt-4 bg-[#F5F3E0] text-[#003049] hover:text-[#F5F3E0] hover:bg-[#009FF5] font-bold ease-in duration-200">
               Code
             </button>
             </a>
-              <a
+              <Link
                 className="text-lg underline font-bold"
                 href="/#projects"
+                rel='noreferrer'
               >
             <div className="p-1 my-8 bg-[#D64045] hover:bg-[#E6898C] rounded-xl ease-in duration-200 cursor-pointer">
                 Back
             </div>
-              </a>
+              </Link>
           </div>
         </div>
         <div className="lg:w-[15%] md:w-[35%] bg-[#F5F3E0] text-[#003049] font-bold shadow-md shadow-[#000] rounded-xl p-4">

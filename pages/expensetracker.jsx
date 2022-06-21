@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import { RiRadioButtonFill } from 'react-icons/ri';
 import track from '../public/assets/Expense.png';
+import Link from 'next/link';
+import { RiRadioButtonFill } from 'react-icons/ri';
 
 const expensetracker = () => {
   return (
@@ -36,18 +37,19 @@ const expensetracker = () => {
             <a
               href="https://github.com/jimjamesjimathy/expense-tracker"
               target="_blank"
+              rel='noreferrer'
             >
               <button className="px-8 py-2 mt-4 bg-[#F5F3E0] text-[#003049] hover:text-[#F5F3E0] hover:bg-[#009FF5] font-bold ease-in duration-200">
                 Code
               </button>
             </a>
             <div className="my-8 px-8 py-2 mt-4 bg-[#D64045] hover:bg-[#E6898C] rounded-xl ease-in duration-200 cursor-pointer">
-              <a
+              <Link
                 className="text-lg underline mt-[-75px] font-bold"
                 href="/#projects"
               >
                 Back
-              </a>
+              </Link>
             </div>
           </div>
         </div>

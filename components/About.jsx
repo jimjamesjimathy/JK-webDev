@@ -19,8 +19,8 @@ const About = () => {
             write, record and produce my own music. I am obsessed with the game
             of Hockey and just recently started playing a little bit. I spend
             the majority of my time at my computer as I got into coding just
-            over a year ago and I can't seem to get enough of it. I recently
-            graduated from <a href="/">Bloom</a> institute of technology as a
+            over a year ago and I cannot seem to get enough of it. I recently
+            graduated from <a href="https://www.bloomtech.com/" target="_blank" rel='noreferrer'>Bloom</a> institute of technology as a
             Full Stack Engineer and I cannot wait to see where this takes me!
           </p>
         </div>

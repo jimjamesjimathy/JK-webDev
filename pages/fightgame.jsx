@@ -1,6 +1,7 @@
 import React from 'react';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Image from 'next/image';
+import Link from 'next/link';
 import fightImg from '../public/assets/fightGame.png';
 
 const fightgame = () => {
@@ -33,18 +34,18 @@ const fightgame = () => {
             odio?{" "}
           </p>
           <div>
-            <a href='https://github.com/jimjamesjimathy/fightMania' target='_blank'>
+            <a href='https://github.com/jimjamesjimathy/fightMania' target='_blank' rel='noreferrer'>
             <button className="px-8 py-2 mt-4 bg-[#F5F3E0] text-[#003049] hover:text-[#F5F3E0] hover:bg-[#009FF5] font-bold ease-in duration-200">
               Code
             </button>
             </a>
             <div className='my-8 px-8 py-2 mt-4 bg-[#D64045] hover:bg-[#E6898C] rounded-xl ease-in duration-200 cursor-pointer'>
-              <a
+              <Link
                 className="text-lg underline mt-[-75px] font-bold"
                 href="/#projects"
               >
                 Back
-              </a>
+              </Link>
             </div>
           </div>
         </div>
