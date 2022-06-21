@@ -82,17 +82,25 @@ const Contact = () => {
               <form className="text-[#000] font-bold" onSubmit={handleSubmit}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
-                    <label htmlFor='name' className="text-[#FE7F2D] font-bold uppercase text-sm py-2">
+                    <label
+                      htmlFor="name"
+                      className="text-[#FE7F2D] font-bold uppercase text-sm py-2"
+                    >
                       Name
                     </label>
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-500"
-                      id='name'
+                      id="name"
                       type="text"
                       name="name"
                       placeholder="Name"
+                      required
                     />
-                    <ValidationError prefix='Name' field='name' errors={state.errors} />
+                    <ValidationError
+                      prefix="Name"
+                      field="name"
+                      errors={state.errors}
+                    />
                   </div>
                   <div className="flex flex-col">
                     <label className="text-[#FE7F2D] font-bold uppercase text-sm py-2">
@@ -101,11 +109,15 @@ const Contact = () => {
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-500"
                       type="tel"
-                      id='number'
+                      id="number"
                       name="number"
                       placeholder="Number"
                     />
-                    <ValidationError prefix='Number' field='number' errors={state.errors} />
+                    <ValidationError
+                      prefix="Number"
+                      field="number"
+                      errors={state.errors}
+                    />
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
@@ -114,12 +126,17 @@ const Contact = () => {
                   </label>
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-500"
-                    id='email'
+                    id="email"
                     type="email"
                     name="email"
                     placeholder="Email"
+                    required
                   />
-                    <ValidationError prefix='Email' field='email' errors={state.errors} />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
+                  />
                 </div>
                 <div className="flex flex-col py-2">
                   <label className="text-[#FE7F2D] font-bold uppercase text-sm py-2">
@@ -127,12 +144,17 @@ const Contact = () => {
                   </label>
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-500"
-                    id='subject'
+                    id="subject"
                     type="text"
                     name="subject"
                     placeholder="Subject"
+                    required
                   />
-                    <ValidationError prefix='Subject' field='subject' errors={state.errors} />
+                  <ValidationError
+                    prefix="Subject"
+                    field="subject"
+                    errors={state.errors}
+                  />
                 </div>
                 <div className="flex flex-col py-2">
                   <label className="text-[#FE7F2D] font-bold uppercase text-sm py-2">
@@ -141,11 +163,16 @@ const Contact = () => {
                   <textarea
                     className="border-2 rounded-lg p-3 border-gray-500"
                     rows={5}
-                    id='message'
+                    id="message"
                     name="message"
                     placeholder="Write you message here"
+                    required
                   />
-                    <ValidationError prefix='Message' field='message' errors={state.errors} />
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                  />
                 </div>
                 <button
                   className="w-full p-4 mt-4 text-lg font-bold bg-[#D64045] hover:bg-[#E6898C] ease-in duration-200"
@@ -154,7 +181,6 @@ const Contact = () => {
                 >
                   Send
                 </button>
-                <ValidationError errors={state.errors} />
               </form>
             </div>
           </div>
