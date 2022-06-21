@@ -1,11 +1,13 @@
-import React from 'react';
 import Link from 'next/link';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm('xwkyjleo');
+
   return (
     <div id="contact" className="w-full lg:h-screen pt-5">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -29,8 +31,8 @@ const Contact = () => {
                 </h2>
                 <p className="text-xl">Full Stack Developer</p>
                 <p className="py-4">
-                  I am available for freelance or full-time positions. Let&apos;s get
-                  in touch.
+                  I am available for freelance or full-time positions.
+                  Let&apos;s get in touch.
                 </p>
               </div>
               <div>
@@ -77,26 +79,33 @@ const Contact = () => {
           {/* Right */}
           <div className="bg-[#00507A] col-span-3 w-full h-auto shadow-md shadow-[#000] rounded-xl lg:p-4">
             <div className="p-4">
-              <form className="text-[#000]">
+              <form className="text-[#000] font-bold" onSubmit={handleSubmit}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
-                    <label className="text-[#FE7F2D] font-bold uppercase text-sm py-2">
+                    <label htmlFor='name' className="text-[#FE7F2D] font-bold uppercase text-sm py-2">
                       Name
                     </label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-700"
+                      className="border-2 rounded-lg p-3 flex border-gray-500"
+                      id='name'
                       type="text"
-                      required
+                      name="name"
+                      placeholder="Name"
                     />
+                    <ValidationError prefix='Name' field='name' errors={state.errors} />
                   </div>
                   <div className="flex flex-col">
                     <label className="text-[#FE7F2D] font-bold uppercase text-sm py-2">
                       Number (optional)
                     </label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-700"
-                      type="text"
+                      className="border-2 rounded-lg p-3 flex border-gray-500"
+                      type="tel"
+                      id='number'
+                      name="number"
+                      placeholder="Number"
                     />
+                    <ValidationError prefix='Number' field='number' errors={state.errors} />
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
@@ -104,34 +113,48 @@ const Contact = () => {
                     Email
                   </label>
                   <input
-                    className="border-2 rounded-lg p-3 flex border-gray-700"
+                    className="border-2 rounded-lg p-3 flex border-gray-500"
+                    id='email'
                     type="email"
-                    required
+                    name="email"
+                    placeholder="Email"
                   />
+                    <ValidationError prefix='Email' field='email' errors={state.errors} />
                 </div>
                 <div className="flex flex-col py-2">
                   <label className="text-[#FE7F2D] font-bold uppercase text-sm py-2">
                     Subject
                   </label>
                   <input
-                    className="border-2 rounded-lg p-3 flex border-gray-700"
+                    className="border-2 rounded-lg p-3 flex border-gray-500"
+                    id='subject'
                     type="text"
-                    required
+                    name="subject"
+                    placeholder="Subject"
                   />
+                    <ValidationError prefix='Subject' field='subject' errors={state.errors} />
                 </div>
                 <div className="flex flex-col py-2">
                   <label className="text-[#FE7F2D] font-bold uppercase text-sm py-2">
                     Message
                   </label>
                   <textarea
-                    className="border-2 rounded-lg p-3 border-gray-700"
+                    className="border-2 rounded-lg p-3 border-gray-500"
                     rows={5}
-                    required
-                  ></textarea>
+                    id='message'
+                    name="message"
+                    placeholder="Write you message here"
+                  />
+                    <ValidationError prefix='Message' field='message' errors={state.errors} />
                 </div>
-                <button className="w-full p-4 mt-4 text-lg font-bold bg-[#D64045] hover:bg-[#E6898C] ease-in duration-200">
-                  Send Message
+                <button
+                  className="w-full p-4 mt-4 text-lg font-bold bg-[#D64045] hover:bg-[#E6898C] ease-in duration-200"
+                  type="button"
+                  onClick={() => window.location.reload(true)}
+                >
+                  Send
                 </button>
+                <ValidationError errors={state.errors} />
               </form>
             </div>
           </div>
