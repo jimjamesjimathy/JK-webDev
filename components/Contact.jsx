@@ -6,7 +6,7 @@ import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm('xwkyjleo');
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM || 'xwkyjleo');
 
   return (
     <div id="contact" className="w-full lg:h-screen pt-5">
