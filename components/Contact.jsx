@@ -3,10 +3,8 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
-import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
 
   return (
     <div id="contact" className="w-full lg:h-screen pt-5">
@@ -78,7 +76,7 @@ const Contact = () => {
           {/* Right */}
           <div className="bg-[#00507A] col-span-3 w-full h-auto shadow-md shadow-[#000] rounded-xl lg:p-4">
             <div className="p-4">
-              <form className="text-[#000] font-bold" onSubmit={handleSubmit} action='https://formspree.io/f/xwkyjleo' method="POST">
+              <form className="text-[#000] font-bold">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label
@@ -95,11 +93,6 @@ const Contact = () => {
                       placeholder="Name"
                       required
                     />
-                    <ValidationError
-                      prefix="Name"
-                      field="name"
-                      errors={state.errors}
-                    />
                   </div>
                   <div className="flex flex-col">
                     <label className="text-[#FE7F2D] font-bold uppercase text-sm py-2">
@@ -111,11 +104,6 @@ const Contact = () => {
                       id="number"
                       name="number"
                       placeholder="Number"
-                    />
-                    <ValidationError
-                      prefix="Number"
-                      field="number"
-                      errors={state.errors}
                     />
                   </div>
                 </div>
@@ -131,11 +119,6 @@ const Contact = () => {
                     placeholder="Email"
                     required
                   />
-                  <ValidationError
-                    prefix="Email"
-                    field="email"
-                    errors={state.errors}
-                  />
                 </div>
                 <div className="flex flex-col py-2">
                   <label className="text-[#FE7F2D] font-bold uppercase text-sm py-2">
@@ -149,11 +132,6 @@ const Contact = () => {
                     placeholder="Subject"
                     required
                   />
-                  <ValidationError
-                    prefix="Subject"
-                    field="subject"
-                    errors={state.errors}
-                  />
                 </div>
                 <div className="flex flex-col py-2">
                   <label className="text-[#FE7F2D] font-bold uppercase text-sm py-2">
@@ -166,11 +144,6 @@ const Contact = () => {
                     name="message"
                     placeholder="Write you message here"
                     required
-                  />
-                  <ValidationError
-                    prefix="Message"
-                    field="message"
-                    errors={state.errors}
                   />
                 </div>
                 <button

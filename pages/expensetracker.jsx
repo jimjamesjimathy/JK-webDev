@@ -23,21 +23,23 @@ const expensetracker = () => {
             Overview:
           </p>
           <p>
-            {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ex eum
-            fugiat labore laudantium incidunt quod quasi cupiditate voluptatem
-            hic explicabo repudiandae quibusdam repellendus, cumque tempora,
-            perferendis iure unde quae. Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Dolores, cumque laboriosam suscipit accusantium
-            praesentium at consectetur architecto nam nihil accusamus quod
-            distinctio. Officia magnam ducimus itaque minima laudantium natus
-            odio?{" "}
+            Simple expense tracker used to show deposit amounts as well as
+            withdrawl amounts. Easy to use and completely responsive.
           </p>
           <div>
             <a
+              href="https://expense-tracker-seven-ashy.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="px-8 py-2 mt-4 mr-4 bg-[#F5F3E0] text-[#003049] hover:text-[#F5F3E0] hover:bg-[#009FF5] font-bold ease-in duration-200">
+                Demo
+              </button>
+            </a>
+            <a
               href="https://github.com/jimjamesjimathy/expense-tracker"
               target="_blank"
-              rel='noreferrer'
+              rel="noreferrer"
             >
               <button className="px-8 py-2 mt-4 bg-[#F5F3E0] text-[#003049] hover:text-[#F5F3E0] hover:bg-[#009FF5] font-bold ease-in duration-200">
                 Code
@@ -62,15 +64,6 @@ const expensetracker = () => {
               </p>
               <p className="py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> javaScript
-              </p>
-              <p className="py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> MongoDB
-              </p>
-              <p className="py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Node.js
-              </p>
-              <p className="py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Express
               </p>
               <p className="py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Scss

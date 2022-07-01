@@ -23,31 +23,40 @@ const ecommerce = () => {
             Overview:
           </p>
           <p>
-            {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ex eum
-            fugiat labore laudantium incidunt quod quasi cupiditate voluptatem
-            hic explicabo repudiandae quibusdam repellendus, cumque tempora,
-            perferendis iure unde quae. Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Dolores, cumque laboriosam suscipit accusantium
-            praesentium at consectetur architecto nam nihil accusamus quod
-            distinctio. Officia magnam ducimus itaque minima laudantium natus
-            odio?{" "}
+            Front end Ecommerce application for any type of product that the
+            user/client chooses to sell. The backend of this application is
+            connected seperately but allows users who visit the site to register
+            their own username and password to save searches and also recieve
+            special offers.
           </p>
           <div>
-            <a href='https://github.com/jimjamesjimathy/eCommerce' target='_blank' rel='noreferrer'>
-            <button className="px-8 py-2 mt-4 bg-[#F5F3E0] text-[#003049] hover:text-[#F5F3E0] hover:bg-[#009FF5] font-bold ease-in duration-200">
-              Code
-            </button>
+            <a
+              href="https://e-commerce-zeta-lake.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="px-8 py-2 mt-4 mr-4 bg-[#F5F3E0] text-[#003049] hover:text-[#F5F3E0] hover:bg-[#009FF5] font-bold ease-in duration-200">
+                Demo
+              </button>
             </a>
-              <Link
-                className="text-lg underline font-bold"
-                href="/#projects"
-                rel='noreferrer'
-              >
-            <div className="p-1 my-8 bg-[#D64045] hover:bg-[#E6898C] rounded-xl ease-in duration-200 cursor-pointer">
+            <a
+              href="https://github.com/jimjamesjimathy/eCommerce"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="px-8 py-2 mt-4 bg-[#F5F3E0] text-[#003049] hover:text-[#F5F3E0] hover:bg-[#009FF5] font-bold ease-in duration-200">
+                Code
+              </button>
+            </a>
+            <Link
+              className="text-lg underline font-bold"
+              href="/#projects"
+              rel="noreferrer"
+            >
+              <div className="p-1 my-8 bg-[#D64045] hover:bg-[#E6898C] rounded-xl ease-in duration-200 cursor-pointer">
                 Back
-            </div>
-              </Link>
+              </div>
+            </Link>
           </div>
         </div>
         <div className="lg:w-[15%] md:w-[35%] bg-[#F5F3E0] text-[#003049] font-bold shadow-md shadow-[#000] rounded-xl p-4">

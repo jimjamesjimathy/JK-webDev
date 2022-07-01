@@ -23,21 +23,24 @@ const instajam = () => {
             Overview:
           </p>
           <p>
-            {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ex eum
-            fugiat labore laudantium incidunt quod quasi cupiditate voluptatem
-            hic explicabo repudiandae quibusdam repellendus, cumque tempora,
-            perferendis iure unde quae. Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Dolores, cumque laboriosam suscipit accusantium
-            praesentium at consectetur architecto nam nihil accusamus quod
-            distinctio. Officia magnam ducimus itaque minima laudantium natus
-            odio?{" "}
+            A social media platform that allows users to register a username and
+            upload their own photos as well as like and comment on others
+            photos.
           </p>
           <div>
             <a
+              href="https://insta-jam.vercel.app/posts"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="px-8 py-2 mt-4 mr-4 bg-[#F5F3E0] text-[#003049] hover:text-[#F5F3E0] hover:bg-[#009FF5] font-bold ease-in duration-200">
+                Demo
+              </button>
+            </a>
+            <a
               href="https://github.com/jimjamesjimathy/instaJam"
               target="_blank"
-              rel='noreferrer'
+              rel="noreferrer"
             >
               <button className="px-8 py-2 mt-4 bg-[#F5F3E0] text-[#003049] hover:text-[#F5F3E0] hover:bg-[#009FF5] font-bold ease-in duration-200">
                 Code
@@ -73,7 +76,10 @@ const instajam = () => {
                 <RiRadioButtonFill className="pr-1" /> Express
               </p>
               <p className="py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Scss
+                <RiRadioButtonFill className="pr-1" /> Material-UI
+              </p>
+              <p className="py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> JSON web tokens
               </p>
             </div>
           </div>
